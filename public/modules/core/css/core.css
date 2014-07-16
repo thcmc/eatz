@@ -21,7 +21,7 @@ body {margin-bottom: 60px; background-color: transparent;}
 h1 {font-size:48px;}
 h2 {font-family: 'Playfair Display', serif;}
 h3 {font-family: 'Muli', sans-serif;}
-h4 {font-family: 'Muli', sans-serif;}
+h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 
 /* ---------------------------------------------------------------BG IMG */
 
@@ -39,8 +39,8 @@ h4 {font-family: 'Muli', sans-serif;}
 }
 /* fonts and text */
 
-h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margin-bottom: 5px; padding-bottom: 5px;}
-
+/* h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margin-bottom: 5px; padding-bottom: 5px;}
+ */
 /* ---------------------------------------------------------------navigation */
 .navbar-brand {
   padding: 0px;
@@ -48,7 +48,7 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
 .logoImageInNav {
   padding-bottom: 5px; padding-top: 5px; vertical-align: middle;
 }
-
+.nav {text-align: center;}
 .nav li {list-style: none; float: right;}
 
 @media (min-width: 768px) {
@@ -73,7 +73,7 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
 .mainWrapper {background: rgb(255, 255, 255); background: rgba(255, 255, 255, .6);}
 
 
-#Toprowuiview {margin-top: 20px; background: rgb(255, 255, 255); background: rgba(255, 255, 255, .6); }
+#Toprowuiview {margin-top: 10px; background: rgb(255, 255, 255); background: rgba(255, 255, 255, .6); }
 #listleft {position: absolute; float: left; list-style: none; padding-left: 0px; margin-left: 0px; padding-top: 4px;}
 #listleft li {padding-top: 10px;}
 
@@ -130,12 +130,14 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
 #Lmidcol {margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
 
 /* Center middle column*/
-#Cmidcol {margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); height: 100%; border-right: 1px dotted red; border-left: 1px dotted red;} /*  */
+#Cmidcol {margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
 .insideCmidCol { padding: 10px; margin-top: 10px; margin-bottom: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, .6); color: white; border: 1px solid black;}
 .insideCmidCol:hover {border: 1px solid white; cursor: pointer;}
 .insideCmidCol p {font-family: 'Muli', sans-serif; text-shadow: black 0.1em 0.1em 0.2em;}
 .insideCmidCol h3 {color: white; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif; margin-top: 2px;}
 .insideCmidCol h5 {color: black; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif;}
+
+
 #red {text-shadow: black 0.1em 0.1em 0.2em;}
 #shadow {text-shadow: black 0.1em 0.1em 0.2em;}
 .eventCatering {
@@ -144,7 +146,7 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
 }
 
 /* right middle column*/
-#Rmidcol {float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); height: 100%;} /*  */
+#Rmidcol {float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); } /*  */
 #Rmidcol h4 {}
 #Rmidcol ul {list-style: none; padding-left: 0px; margin-left: 0px;}
 #Rmidcol ul li {margin-top: 4px; vertical-align: top; color: white;}
@@ -166,6 +168,7 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
   .undecorated-link:hover {text-decoration: none;}
 
   #Toprowuiview h1 {font-family: 'Playfair Display', serif;  text-align: center; color: white; font-variant: small-caps; text-shadow: 2px 2px 2px #88AB2D, 3px 3px 0px black;}
+  #Toprowuiview h2 {font-family: 'Playfair Display', serif;  text-align: center; color: white; font-variant: small-caps; text-shadow: 1px 1px 1px #88AB2D, 2px 2px 0px black;}
 
   #mainTitle {text-shadow: 0.1em 0.1em 0.2em white; line-height: 48px;}
 
@@ -187,6 +190,14 @@ h4 {background: url(../img/pattern2.png) bottom repeat-x;line-height: 1.2; margi
   /* background: rgba(255, 255, 255, .6); */
   background: white;  height:200px;
   }
+
+  #coverageAreas h6 {
+    color: white;
+    padding-left: 15px;
+    background: rgba(0, 0, 0, .7);
+    top:0;
+    position: absolute;
+}
 
   .ftrow h5 {border-bottom: 2px dotted #ccc;}
 
