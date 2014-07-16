@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'MEAN.JS',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
-		keywords: 'mongodb, express, angularjs, node.js, mongoose, passport'
+		title: 'East-End Eatz | 412',
+		description: 'home-delivered meals, private chef, meal delivery, food-to-go, Pittsburgh, PA',
+		keywords: 'food delivery, private chef, in-home chef, Pittsburgh, East End Pittsburgh, Shadyside, Squirrel Hill, Fox Chapel, Oakmont'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
@@ -15,6 +15,9 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+				'https://fonts.googleapis.com/css?family=Playfair+Display',
+				'//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
+				'https://fonts.googleapis.com/css?family=Muli'
 			],
 			js: [
 				'public/lib/angular/angular.js',

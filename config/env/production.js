@@ -1,12 +1,15 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://localhost/mean',
+	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://tmh144429:F1la50won@ds053597.mongolab.com:53597/eastendeatz',
 	assets: {
 		lib: {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.min.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.min.css',
+				'https://fonts.googleapis.com/css?family=Playfair+Display',
+				'//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
+				'https://fonts.googleapis.com/css?family=Muli'
 			],
 			js: [
 				'public/lib/angular/angular.min.js',

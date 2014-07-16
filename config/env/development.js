@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/mean-dev',
+	db: 'mongodb://tmh144429:F1la50won@ds053597.mongolab.com:53597/eastendeatz',
 	app: {
-		title: 'MEAN.JS - Development Environment'
+		title: 'East-End Eatz | 412'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
