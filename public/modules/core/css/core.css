@@ -127,16 +127,19 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 }
 
 /* left middle column*/
-#Lmidcol {margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
+#Lmidcol {height: 840px; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
+
+
 
 /* Center middle column*/
-#Cmidcol {margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
+#Cmidcol {height: 840px; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
 .insideCmidCol { padding: 10px; margin-top: 10px; margin-bottom: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, .6); color: white; border: 1px solid black;}
 .insideCmidCol:hover {border: 1px solid white; cursor: pointer;}
 .insideCmidCol p {font-family: 'Muli', sans-serif; text-shadow: black 0.1em 0.1em 0.2em;}
 .insideCmidCol h3 {color: white; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif; margin-top: 2px;}
 .insideCmidCol h5 {color: black; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif;}
 
+#imageTWO h2 {margin-top: 10px;}
 
 #red {text-shadow: black 0.1em 0.1em 0.2em;}
 #shadow {text-shadow: black 0.1em 0.1em 0.2em;}
@@ -146,7 +149,7 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 }
 
 /* right middle column*/
-#Rmidcol {float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); } /*  */
+#Rmidcol {height: 840px; float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); } /*  */
 #Rmidcol h4 {}
 #Rmidcol ul {list-style: none; padding-left: 0px; margin-left: 0px;}
 #Rmidcol ul li {margin-top: 4px; vertical-align: top; color: white;}
