@@ -1,0 +1,42 @@
+<section class="col-md-12" id="Toprowuiview" ng-controller="HomeController">
+	
+	<div class="col-md-8 insideCmidCol"> 
+		<h1 align="center">Fresh, Local, Organic, Upscale</h1>
+		<h5 align="center"><small style="color: white;">Contact Us to Discuss <br>Custom Menus, Seasonal Choices, Dietary Requirements, &amp; Event Planning</small></h5>
+
+		<h4>Breakfast</h4>
+
+		<div align="center" ng-repeat="item in items" class="row">
+
+			<div align="center" class="col-lg-12"><h3>{{item.name}}</h3></div>
+
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{item.desc}}</i></div>
+			
+		</div>
+
+		<h4>Weekly Tasting Menu</h4>
+
+		<div align="center" ng-repeat="tasting in tastings" class="row">
+			<div align="center" class="col-lg-12 text-muted"><h6><b>{{tasting.course}}</b></h6></div>
+			<div align="center" class="col-lg-12"><h3>{{tasting.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{tasting.desc}}</i></div>
+			
+		</div>
+
+		<h4>Small-batch Cooking</h4>
+		<div align="center" class="col-lg-12 text-muted"><h6><b>First Course</b></h6></div>
+		
+		<div align="center" ng-repeat="first in firsts" class="row">
+			<div align="center" class="col-lg-12"><h3>{{first.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{first.desc}}</i></div>		
+		</div>
+
+		<div align="center" class="col-lg-12 text-muted"><h6><b>Main Course</b></h6></div>
+		
+		<div align="center" ng-repeat="second in seconds" class="row">
+			<div align="center" class="col-lg-12"><h3>{{second.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{second.desc}}</i></div>		
+		</div>
+		
+	</div>
+</section>

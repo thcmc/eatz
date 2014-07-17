@@ -21,7 +21,7 @@ body {margin-bottom: 60px; background-color: transparent;}
 h1 {font-size:48px;}
 h2 {font-family: 'Playfair Display', serif;}
 h3 {font-family: 'Muli', sans-serif;}
-h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
+h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-top: 10px;}
 
 /* ---------------------------------------------------------------BG IMG */
 
@@ -127,13 +127,13 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 }
 
 /* left middle column*/
-#Lmidcol {height: 855px; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
+#Lmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
 
 
 
 /* Center middle column*/
-#Cmidcol {height: 855px; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
-.insideCmidCol { padding: 10px; margin-top: 10px; margin-bottom: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, .6); color: white; border: 1px solid black;}
+#Cmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
+.insideCmidCol {padding: 10px; margin-top: 10px; margin-bottom: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, .6); color: white; border: 1px solid black; }
 .insideCmidCol:hover {border: 1px solid white; cursor: pointer;}
 .insideCmidCol p {font-family: 'Muli', sans-serif; text-shadow: black 0.1em 0.1em 0.2em;}
 .insideCmidCol h3 {color: white; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif; margin-top: 2px;}
@@ -149,7 +149,7 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 }
 
 /* right middle column*/
-#Rmidcol {height: 855px; float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); } /*  */
+#Rmidcol {height: 100%; float: right; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); } /*  */
 #Rmidcol h4 {}
 #Rmidcol ul {list-style: none; padding-left: 0px; margin-left: 0px;}
 #Rmidcol ul li {margin-top: 4px; vertical-align: top; color: white;}
@@ -185,7 +185,7 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000;}
 
   .spanTitle5 {font-family: 'Muli', sans-serif;  text-align: center; color: black; font-variant: small-caps; text-shadow: 2px 2px white, 2px 2px #88AB2D; text-align: center;}
 
-
+  .fa-user {float: left;}
 /* ---------------------------------------------------------------FOOTER*/
   .footerow {
   padding: 12px 4px 4px; 

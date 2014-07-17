@@ -1,4 +1,5 @@
 <img class="bg" src="modules/core/img/bg1.jpg">
+<ui-view>
 <section data-ng-controller="HomeController">
 	<section class="col-lg-12 hidden-md hidden-sm hidden-xs" id="Toprowuiview">
 		<!-- <img id="mainSecImg" src="modules/core/img/brand/eee2abc-plate-only.png"> -->
@@ -91,7 +92,7 @@
 
 			<h4>Find Us Online!</h4>
 			<div class="col-md-12">	
-				<ul class="nav" style="padding-bottom: 31px;">
+				<ul class="nav" style="padding-bottom: 41px;">
 					<li><a href="" id="social1"></a></li>
 					<li><a href="" id="social2"></a></li>
 					<li><a href="" id="social3"></a></li>
@@ -103,18 +104,18 @@
 		<!-- Right COLUMN______________________________________________________________________________________ -->
 		<section class="col-md-4" id="Rmidcol">
 
-			<div class="col-md-12 insideCmidCol" > <!-- onclick="location.href='http://localhost:3000/#!/cateringrequest' " -->
+			<div class="col-md-12 insideCmidCol" onclick="location.href='http://localhost:3000/#!/menu' "> <!--  -->
 				<h3 align="center"><span id="red">&#10087</span> Our Mission <span id="red">&#10087</span></h3>
 					<h4 align="center">Fresh, Local, Organic, Upscale</h4>
-				<h5 align="center"><small style="color: white;">Contact Us to Discuss Menu Choices &amp; Dietary Requirements</small></h5>
+				<h5 align="center"><small style="color: white;">Click to View Sample Menu</small></h5>
 			</div>
 			
 			<h4>Meal Delivery Services</h4>
 			<div class="col-md-12" id="image">
 				<img src="modules/core/img/meal3.jpg" alt="Home Chef Services"/>
 		        <h3>Delivery to Your Door&nbsp;</h3>
-		        <h2>No-hassle Delivery</h2>
-		        <p>We deliver fresh, upscale meals to your door.  If you've every wanted to great food without the challenges of time and transporthen this service is for you.
+		        <h2>On-time Freshness</h2>
+		        <p>We deliver fresh, upscale meals to your door.  If you've every wanted to great food without the challenges of time and transportation then this service is for you.
 		        <br><br>
 		        We offer delicious nutritional meals individually packaged that arrive fresh and delicious.  Additionally,  if you are in search ofspecific routine, we can help plan and have your meal ready when you want it.  
 		        <br><br>
@@ -125,13 +126,13 @@
 			<div class="col-md-12" id="image">
 				<div class="col-md-6">
 					<i class="fa fa-user fa-3x"></i>
-					<h5>Chef Sean Kelly</h5>
+					<h5><b>Chef Sean Kelly</b></h5>
 					<p>15+ years of executive experience in fine dining, upscale hotels, and catering. Creator of East End Cafe.</p>
 				</div>
 
 				<div class="col-md-6">
 					<i class="fa fa-user fa-3x"></i>
-					<h5>Chef Dustin Miller</h5>
+					<h5><b>Chef Dustin Miller</b></h5>
 					<p>Extensive multi-year experience in large events, including Executive Sous Chef Pittsburgh Steelers, Heinz Field and Aramark.</p>
 				</div>
 		         
@@ -139,3 +140,4 @@
 
 		</section>	
 </section>
+</ui-view>
