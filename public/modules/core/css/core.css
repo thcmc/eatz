@@ -129,7 +129,8 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
 /* left middle column*/
 #Lmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
 
-
+/* MENU */
+.menuAdsRight img {padding-top: 10px; margin-left: 14px;}
 
 /* Center middle column*/
 #Cmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
@@ -185,7 +186,7 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
 
   .spanTitle5 {font-family: 'Muli', sans-serif;  text-align: center; color: black; font-variant: small-caps; text-shadow: 2px 2px white, 2px 2px #88AB2D; text-align: center;}
 
-  .fa-user {float: left;}
+  .fa-user {float: left; margin-right: 5px;}
 /* ---------------------------------------------------------------FOOTER*/
   .footerow {
   padding: 12px 4px 4px; 
