@@ -6,9 +6,9 @@ module.exports = {
 		title: 'East End Eatz | 412 Catering + Chef Services'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
-		callbackURL: 'http://localhost:3000/auth/facebook/callback'
+		clientID: process.env.FACEBOOK_ID || '1465793930360291',
+		clientSecret: process.env.FACEBOOK_SECRET || '8766c50032a2eae98146ef4aa30993de',
+		callbackURL: 'http://www.eastendeatz.com/#!/auth'
 	},
 	twitter: {
 		clientID: process.env.TWITTER_KEY || 'CONSUMER_KEY',
