@@ -4,7 +4,7 @@ module.exports = {
 	db: 'mongodb://localhost/mean-test',
 	port: 3001,
 	app: {
-		title: 'East-End Eatz | 412 Catering + Chef Services'
+		title: 'East End Eatz | 412 Catering + Chef Services'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
