@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'East-End Eatz | 412',
-		description: 'home-delivered meals, private chef, meal delivery, food-to-go, Pittsburgh, PA',
-		keywords: 'food delivery, private chef, in-home chef, Pittsburgh, East End Pittsburgh, Shadyside, Squirrel Hill, Fox Chapel, Oakmont'
+		title: 'East-End Eatz | 412 Catering + Chef Services',
+		description: 'Event catering and private chef services in Pittsburgh, featuring options for meal delivery, small batch cooking, and using locally produced, organic ingredients.',
+		keywords: 'Event Catering Pittsburgh, Private Chef Servies Pittsburgh, Chef Sean Kelly Pittsburgh, Locally produced food, 412 Catering, 412 Chef Services'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',

@@ -3,7 +3,7 @@
 module.exports = {
 	db: 'mongodb://tmh144429:F1la50won@ds053597.mongolab.com:53597/eastendeatz',
 	app: {
-		title: 'East-End Eatz | 412'
+		title: 'East-End Eatz | 412 Catering + Chef Services'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
