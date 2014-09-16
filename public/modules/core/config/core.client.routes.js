@@ -17,7 +17,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 			templateUrl: 'modules/core/views/home.client.view.menu.html'
 		}).
 		state('auth', {
-			url: '#!/auth',
+			url: '/auth',
 			templateUrl: 'modules/core/views/auth.client.view.html'
 		});
 	}
