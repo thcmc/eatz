@@ -186,7 +186,11 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
 
   .spanTitle5 {font-family: 'Muli', sans-serif;  text-align: center; color: black; font-variant: small-caps; text-shadow: 2px 2px white, 2px 2px #88AB2D; text-align: center;}
 
-  .fa-user {float: left; margin-right: 5px;}
+  .fa-user {
+    float: left; 
+    margin-right: 12px;
+    margin-bottom: 2px;
+  }
 /* ---------------------------------------------------------------FOOTER*/
   .footerow {
   padding: 12px 4px 4px; 
@@ -250,6 +254,11 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
     border-color: #A60000;
   }
 
+
+.bottomAcknowledgement {
+  opacity: .3;
+  margin-top: 40px;
+}
 
 
 
