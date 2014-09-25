@@ -1,31 +1,23 @@
-
+<img class="bg" src="modules/core/img/bg1.jpg">
 
 
 <div class="col-md-12" id="Toprowuiview" data-ng-controller="FoodsController" data-ng-init="find()" style="margin: 2px; padding: 2px;"> 
     
-  
-
         <div class="page-header">
             <h1 align="center">Fresh, Local, Organic, Upscale</h1>
             <h4 align="center" style="color: black;">Custom menus, seasonal choices, specaial dietary requirements, &amp; event planning are available.  Call to discuss.</h4>
         </div>
 
-
-
-
         <div class="col-md-12 menuWrapper">
-            
             <div class="row responsive">
-
-                <div class="col-md-6" data-ng-repeat="food in foods"  style="height: 100%; " > <!--overflow-y:auto; data-ng-href="#!/foods/{{food._id}}"-->
+                <div class="col-md-6" data-ng-repeat="food in foods"  style="height: 100%; " >
 
                     <div class="pull-right" data-ng-show="authentication.user._id == food.user._id">
-                        <a class="btn btn-primary" href="/#!/foods/{{food._id}}/edit">
-                            <i class="glyphicon glyphicon-edit"></i>
+                        <a class="btn btn-xs btn-info" href="/#!/foods/{{food._id}}/edit">
+                            <i class="fa fa-pencil-square-o" style="color: white;">  Edit</i>
                         </a>
-
-                        <a class="btn btn-primary" data-ng-click="remove();">
-                            <i class="glyphicon glyphicon-trash"></i>
+                        <a class="btn btn-xs btn-danger" href="/#!/foods/{{food._id}}">
+                            <i class="fa fa-trash" style="color: black;">  Delete</i>
                         </a>
                     </div>
 
@@ -39,22 +31,14 @@
             </div>
         </div>
 
-
-
         <div class="alert alert-warning text-center" data-ng-hide="!foods.$resolved || foods.length">
         	No Foods yet, why don't you <a href="/#!/foods/create">create one</a>?
         </div>
 
-
-
-
 <!--     <div class="col-lg-3 col-md-3 menuAdsRight">
-
-
         <div class="row">
             <img align="center" src="modules/core/img/table-catering-ad.png">
         </div>
-
     </div>
  -->
 

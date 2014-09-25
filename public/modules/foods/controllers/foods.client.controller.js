@@ -64,7 +64,7 @@ angular.module('foods').controller('FoodsController', ['$scope', '$stateParams',
 			});
 		};
 
-		$scope.orightml = '<h4>Sample \'H4\' Style for Category Title</h4><h3 style="text-align:center;">Sample \'H3\' Style for Menu Item Title (also centered)</h3><p style="text-align: center;">Sample \'P\' (paragraph) style (also centered) for menu item number 1.</p>';
+		$scope.orightml = '<h4>Sample Category</h4><h3 style="text-align:center;">Sample Menu Item</h3><p style="text-align: center;">Description of Menu Item (if desired)</p>';
 		$scope.desc = $scope.orightml;
 
 

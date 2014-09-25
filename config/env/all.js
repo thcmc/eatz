@@ -16,7 +16,7 @@ module.exports = {
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
 				'https://fonts.googleapis.com/css?family=Playfair+Display',
-				'//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
+				'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
 				'https://fonts.googleapis.com/css?family=Muli'
 			],
 			js: [

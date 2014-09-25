@@ -1,4 +1,4 @@
-
+<img class="bg" src="modules/core/img/bg1.jpg">
 
 
 <section id="Toprowuiview" data-ng-controller="FoodsController" data-ng-init="findOne()">
@@ -10,12 +10,12 @@
 
 
 	<div class="pull-right" data-ng-show="authentication.user._id == food.user._id">
-		<a class="btn btn-primary" href="/#!/foods/{{food._id}}/edit">
-			<i class="glyphicon glyphicon-edit"></i>
+		<a class="btn btn sm btn-info" href="/#!/foods/{{food._id}}/edit">
+			<i class="fa fa-pencil-square-o">  Edit this Menu</i>
 		</a>
 
-		<a class="btn btn-primary" data-ng-click="remove();">
-			<i class="glyphicon glyphicon-trash"></i>
+		<a class="btn btn-danger" data-ng-click="remove();">
+			<i class="fa fa-trash">  Delete this menu (cannot be recovered)</i>
 		</a>
 	</div>
 
