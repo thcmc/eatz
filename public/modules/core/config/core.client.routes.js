@@ -11,10 +11,11 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		state('home', {
 			url: '/',
 			templateUrl: 'modules/core/views/home.client.view.html'
-		}).
-		state('home.menu', {
-			url: 'menu',
-			templateUrl: 'modules/core/views/home.client.view.menu.html'
 		});
+		// .
+		// state('home.menu', {
+		// 	url: 'menu',
+		// 	templateUrl: 'modules/core/views/home.client.view.menu.html'
+		// })
 	}
 ]);

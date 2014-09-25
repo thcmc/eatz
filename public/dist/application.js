@@ -9,8 +9,7 @@ var ApplicationConfiguration = function () {
         'ui.router',
         'ui.bootstrap',
         'ui.utils',
-        'textAngular',
-        'xeditable'
+        'textAngular'
       ];
     // Add a new vertical module
     var registerModule = function (moduleName) {
@@ -149,10 +148,11 @@ angular.module('core').config([
     $stateProvider.state('home', {
       url: '/',
       templateUrl: 'modules/core/views/home.client.view.html'
-    }).state('home.menu', {
-      url: 'menu',
-      templateUrl: 'modules/core/views/home.client.view.menu.html'
-    });
+    });  // .
+         // state('home.menu', {
+         // 	url: 'menu',
+         // 	templateUrl: 'modules/core/views/home.client.view.menu.html'
+         // })
   }
 ]);'use strict';
 angular.module('core').controller('HeaderController', [
