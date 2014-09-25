@@ -11,17 +11,16 @@
             <fieldset>
 
                 <div class="form-group">
-                    <label class="control-label" for="name">List what the menu is for:  </label>
+                    <label class="control-label" for="name">Menu Name:</label>
                     <div class="controls">
-                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Examples:  Menu for the Week of: 00-00-00 ,  Christams 2014 Catering Menu, Grad Party Menu Specials, etc." required>
+                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="e.g. Weekly Seasonal Menu" required>
                     </div>
                 </div>
 
       
                 <div class="form-group">
 
-                    <label class="control-label" for="desc">Please fill in menu content:</label>
-                    <p style="color: white;">You can control some aspects of formatting below (via menu-bar controls below.  Other styling is non-configurable.)</p>
+                    <label class="control-label" for="desc">Menu Content:</label>
 
                     <div class="controls articleContent" text-angular="text-angular" name="desc" ng-model="desc" ta-disabled='disabled' 
                         ta-toolbar="[['h3','h4','p','insertImage','insertLink','justifyLeft','justifyCenter','justifyRight']]">
