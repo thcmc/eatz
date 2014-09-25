@@ -47,6 +47,9 @@
 .menuWrapper a {
 	text-decoration: none;
 }
+.listFoods {
+	z-index: 1;
+}
 .listFoodsMenu h3 {
 	color: white; 
 	text-shadow: 1px 1px 1px #88AB2D, 2px 2px 0px black;

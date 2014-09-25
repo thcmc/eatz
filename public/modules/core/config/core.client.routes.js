@@ -15,13 +15,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		state('home.menu', {
 			url: 'menu',
 			templateUrl: 'modules/core/views/home.client.view.menu.html'
-		}).
-		state('auth', {
-			url: '/auth',
-			templateUrl: 'modules/core/views/auth.client.view.html'
 		});
 	}
-])
-.run(function(editableOptions) {
-  editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
-});
+]);

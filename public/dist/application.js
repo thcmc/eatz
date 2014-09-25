@@ -8,7 +8,9 @@ var ApplicationConfiguration = function () {
         'ngAnimate',
         'ui.router',
         'ui.bootstrap',
-        'ui.utils'
+        'ui.utils',
+        'textAngular',
+        'xeditable'
       ];
     // Add a new vertical module
     var registerModule = function (moduleName) {
@@ -44,18 +46,20 @@ angular.element(document).ready(function () {
 ApplicationConfiguration.registerModule('articles');'use strict';
 // Use Applicaion configuration module to register a new module
 ApplicationConfiguration.registerModule('core');'use strict';
+// Use applicaion configuration module to register a new module
+ApplicationConfiguration.registerModule('foods');'use strict';
 // Use Applicaion configuration module to register a new module
-ApplicationConfiguration.registerModule('users');'use strict';
-// Configuring the Articles module
-angular.module('articles').run([
-  'Menus',
-  function (Menus) {
-    // Set top bar menu items
-    Menus.addMenuItem('topbar', 'Articles', 'articles', 'dropdown', '/articles(/create)?');
-    Menus.addSubMenuItem('topbar', 'articles', 'List Articles', 'articles');
-    Menus.addSubMenuItem('topbar', 'articles', 'New Article', 'articles/create');
-  }
-]);'use strict';
+ApplicationConfiguration.registerModule('users');// 'use strict';
+// // Configuring the Articles module
+// angular.module('articles').run(['Menus',
+// 	function(Menus) {
+// 		// Set top bar menu items
+// 		Menus.addMenuItem('topbar', 'Articles', 'articles', 'dropdown', '/articles(/create)?');
+// 		Menus.addSubMenuItem('topbar', 'articles', 'List Articles', 'articles');
+// 		Menus.addSubMenuItem('topbar', 'articles', 'New Article', 'articles/create');
+// 	}
+// ]);
+'use strict';
 // Setting up route
 angular.module('articles').config([
   '$stateProvider',
@@ -174,6 +178,15 @@ angular.module('core').controller('HomeController', [
   function ($scope, Authentication) {
     // This provides Authentication context.
     $scope.authentication = Authentication;
+    $scope.titles = [{
+        one: '',
+        two: '',
+        three: '',
+        four: '',
+        five: '',
+        six: '',
+        seven: ''
+      }];
     $scope.items = [
       {
         name: 'Cherry-Almond Granola ',
@@ -258,6 +271,55 @@ angular.module('core').controller('HomeController', [
         desc: 'mascarpone, cous cous, pea tendrils, tomato broth'
       }
     ];
+  }
+]);'use strict';
+angular.module('core').controller('XeditableController', [
+  '$scope',
+  'Authentication',
+  '$q',
+  '$http',
+  function ($scope, Authentication, $q, $http) {
+    $scope.authentication = Authentication;
+    $scope.titles = [{
+        one: '',
+        two: '',
+        three: '',
+        four: '',
+        five: '',
+        six: '',
+        seven: ''
+      }];
+    $scope.auth = {
+      id: 1,
+      name: 'awesome auth'
+    };
+    $scope.updateAuth = function (data) {
+      return $http.post('/', {
+        id: $scope.auth.id,
+        name: data
+      });
+    };  // $scope.items = [
+        // {
+        // 	id: 1,
+        // 	name: 'Cherry-Almond Granola ',
+        // 	desc: 'bean Greek yogurt, berries, lemon balm '
+        // },
+        // {
+        // 	id: 2,
+        // 	name: 'Hickory & Oak Smoked Pork Belly',
+        // 	desc: 'five minute egg, baby kale, cherry-vanilla bean maple syrup'
+        // },
+        // {
+        // 	id: 3,
+        // 	name: 'Grilled Sticky ',
+        // 	desc: 'crème anglaze, walnut brittle'
+        // },
+        // {
+        // 	id: 4,
+        // 	name: 'Blood Orange Cured Alaskan Salmon',
+        // 	desc: 'pickled onion, local Spring Valley spinach, dill cream cheese, everything bagel'
+        // }
+        // ];
   }
 ]);'use strict';
 //Menu service used for managing  menus
@@ -391,6 +453,105 @@ angular.module('core').service('Menus', [function () {
     //Adding the topbar menu
     this.addMenu('topbar');
   }]);'use strict';
+// Configuring the Articles module
+angular.module('foods').run([
+  'Menus',
+  function (Menus) {
+    // Set top bar menu items
+    Menus.addMenuItem('topbar', 'Food Menus', 'foods', 'dropdown', '/foods(/create)?');
+    Menus.addSubMenuItem('topbar', 'foods', 'View Food Menus', 'foods');
+    Menus.addSubMenuItem('topbar', 'foods', 'Add/Edit Food Menus', 'foods/create');
+  }
+]);'use strict';
+//Setting up route
+angular.module('foods').config([
+  '$stateProvider',
+  function ($stateProvider) {
+    // Foods state routing
+    $stateProvider.state('listFoods', {
+      url: '/foods',
+      templateUrl: 'modules/foods/views/list-foods.client.view.html'
+    }).state('createFood', {
+      url: '/foods/create',
+      templateUrl: 'modules/foods/views/create-food.client.view.html'
+    }).state('viewFood', {
+      url: '/foods/:foodId',
+      templateUrl: 'modules/foods/views/view-food.client.view.html'
+    }).state('editFood', {
+      url: '/foods/:foodId/edit',
+      templateUrl: 'modules/foods/views/edit-food.client.view.html'
+    });
+  }
+]);'use strict';
+// Foods controller
+angular.module('foods').controller('FoodsController', [
+  '$scope',
+  '$stateParams',
+  '$location',
+  'Authentication',
+  'Foods',
+  function ($scope, $stateParams, $location, Authentication, Foods) {
+    $scope.authentication = Authentication;
+    // Create new Food
+    $scope.create = function () {
+      // Create new Food object
+      var food = new Foods({
+          name: this.name,
+          desc: this.desc
+        });
+      // Redirect after save
+      food.$save(function (response) {
+        $location.path('foods/' + response._id);
+        // Clear form fields
+        $scope.name = '';
+        $scope.desc = '';
+      }, function (errorResponse) {
+        $scope.error = errorResponse.data.message;
+      });
+    };
+    // Remove existing Food
+    $scope.remove = function (food) {
+      if (food) {
+        food.$remove();
+        for (var i in $scope.foods) {
+          if ($scope.foods[i] === food) {
+            $scope.foods.splice(i, 1);
+          }
+        }
+      } else {
+        $scope.food.$remove(function () {
+          $location.path('foods');
+        });
+      }
+    };
+    // Update existing Food
+    $scope.update = function () {
+      var food = $scope.food;
+      food.$update(function () {
+        $location.path('foods/' + food._id);
+      }, function (errorResponse) {
+        $scope.error = errorResponse.data.message;
+      });
+    };
+    // Find a list of Foods
+    $scope.find = function () {
+      $scope.foods = Foods.query();
+    };
+    // Find existing Food
+    $scope.findOne = function () {
+      $scope.food = Foods.get({ foodId: $stateParams.foodId });
+    };
+    $scope.orightml = '<h4>Sample \'H4\' Style for Category Title</h4><h3 style="text-align:center;">Sample \'H3\' Style for Menu Item Title (also centered)</h3><p style="text-align: center;">Sample \'P\' (paragraph) style (also centered) for menu item number 1.</p>';
+    $scope.desc = $scope.orightml;
+  }
+]);'use strict';
+//Foods service used to communicate Foods REST endpoints
+angular.module('foods').factory('Foods', [
+  '$resource',
+  function ($resource) {
+    return $resource('foods/:foodId', { foodId: '@_id' }, { update: { method: 'PUT' } });
+  }
+]);'use strict';
 // Config HTTP Error Handling
 angular.module('users').config([
   '$httpProvider',
@@ -435,9 +596,6 @@ angular.module('users').config([
     }).state('accounts', {
       url: '/settings/accounts',
       templateUrl: 'modules/users/views/settings/social-accounts.client.view.html'
-    }).state('signup', {
-      url: '/signup',
-      templateUrl: 'modules/users/views/signup.client.view.html'
     }).state('signin', {
       url: '/signin',
       templateUrl: 'modules/users/views/signin.client.view.html'
