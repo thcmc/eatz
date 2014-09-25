@@ -1,1 +1,54 @@
-<h2 style="margin-top: 200px;">Welcome to the AUTH zone</h2>
+<section class="col-md-12" id="Toprowuiview" ng-controller="XeditableController">
+	
+	<div class="col-md-8 col-sm-12 col-xs-12 insideCmidCol"> 
+		<h1 align="center">TEST</h1>
+		<!-- <h5 align="center"><small style="color: white;">Contact Us to Discuss <br>Custom Menus, Seasonal Choices, Dietary Requirements, &amp; Event Planning</small></h5> -->
+
+		<h4>{{title.one}}</h4>
+
+		<!-- <div align="center" ng-repeat="item in items" class="row">
+
+			<div align="center" class="col-lg-12"><h3 editable-text="item.name" onaftersave="updateItem()">{{item.name}}</h3></div>
+
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i editable-text="item.desc">{{item.desc}}</i></div>
+			
+		</div> -->
+
+		<a href="#" editable-text="auth.name" onaftersave="updateAuth($data)">
+		    {{ auth.name || 'empty' }}
+		</a>
+
+		<h4>{{title.two}}</h4>
+
+		<div align="center" ng-repeat="tasting in tastings" class="row">
+			<div align="center" class="col-lg-12 text-muted"><h6><b editable-text="tasting.course">{{tasting.course}}</b></h6></div>
+			<div align="center" class="col-lg-12"><h3 editable-text="tasting.name">{{tasting.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i editable-text="tasting.desc">{{tasting.desc}}</i></div>
+			
+		</div>
+<!-- 
+		<h4>TEST HEADER 3</h4>
+		<div align="center" class="col-lg-12 text-muted"><h6><b>First Course</b></h6></div>
+		
+		<div align="center" ng-repeat="first in firsts" class="row">
+			<div align="center" class="col-lg-12"><h3>{{first.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{first.desc}}</i></div>		
+		</div>
+
+		<div align="center" class="col-lg-12 text-muted"><h6><b>Main Course</b></h6></div>
+		
+		<div align="center" ng-repeat="second in seconds" class="row">
+			<div align="center" class="col-lg-12"><h3>{{second.name}}</h3></div>
+			<div align="center" class="col-lg-12" style="margin-bottom: 20px;"><i>{{second.desc}}</i></div>		
+		</div> -->
+		
+	</div>
+
+	<!-- <div class="col-lg-3 col-md-3 menuAdsRight">
+		<div class="row">
+			<img align="center" src="modules/core/img/table-catering-ad.png">
+		</div>
+
+	</div> -->
+
+</section>

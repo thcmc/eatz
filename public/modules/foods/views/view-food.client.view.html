@@ -1,0 +1,59 @@
+
+
+
+<section id="Toprowuiview" data-ng-controller="FoodsController" data-ng-init="findOne()">
+
+<!-- 	<div class="page-header">
+		<h1 data-ng-bind="food.name"></h1>
+		<h1 data-ng-bind="food.name"></h1>
+	</div> -->
+
+
+	<div class="pull-right" data-ng-show="authentication.user._id == food.user._id">
+		<a class="btn btn-primary" href="/#!/foods/{{food._id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+
+		<a class="btn btn-primary" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+
+
+	<!-- <small>
+		<em class="text-muted">
+			Posted on
+			<span data-ng-bind="food.created | date:'mediumDate'"></span>
+			by
+			<span data-ng-bind="food.user.displayName"></span>
+		</em>
+	</small>
+ -->
+
+ <!-- Menu Content -->
+ <div class="menuWrapper">
+
+ 	<div class="insdieCmidCol">
+
+
+ 		<div data-ng-bind="food.name" class="menuTitle"></div>
+
+
+
+		<p class="lead contentWrap" ta-bind="text" ng-model="food.desc" ta-readonly='disabled'>
+			<span class="theLatestContent">{{food.desc}}</span>
+		</p>
+
+
+
+	</div>
+</div>
+
+</section>
+
+<section class="col-md-12" class="bottomAcknowledgement">
+	<p>&copy; 2014 East End Eatz</p>
+	<p>Website by
+		<a href="http://www.creativemonsterconsulting.com" target="_blank">Creative Monster Consulting, LLC.</a>
+	</p>
+</section>

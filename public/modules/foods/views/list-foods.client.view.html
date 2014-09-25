@@ -1,0 +1,72 @@
+
+
+
+<div class="col-md-12" id="Toprowuiview" data-ng-controller="FoodsController" data-ng-init="find()" style="margin: 2px; padding: 2px;"> 
+    
+  
+
+        <div class="page-header">
+            <h1 align="center">Fresh, Local, Organic, Upscale</h1>
+            <h4 align="center" style="color: black;">Custom menus, seasonal choices, specaial dietary requirements, &amp; event planning are available.  Call to discuss.</h4>
+        </div>
+
+
+
+
+        <div class="col-md-12 menuWrapper">
+            
+            <div class="row responsive">
+
+                <div class="col-md-6" data-ng-repeat="food in foods"  style="height: 100%; " > <!--overflow-y:auto; data-ng-href="#!/foods/{{food._id}}"-->
+
+                    <div class="pull-right" data-ng-show="authentication.user._id == food.user._id">
+                        <a class="btn btn-primary" href="/#!/foods/{{food._id}}/edit">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </a>
+
+                        <a class="btn btn-primary" data-ng-click="remove();">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </div>
+
+        			<div data-ng-bind="food.name" class="menuTitle"></div>
+
+                    <div class="contentWrap">
+                        <p ta-bind="text" ng-model="food.desc"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-warning text-center" data-ng-hide="!foods.$resolved || foods.length">
+        	No Foods yet, why don't you <a href="/#!/foods/create">create one</a>?
+        </div>
+
+
+
+
+<!--     <div class="col-lg-3 col-md-3 menuAdsRight">
+
+
+        <div class="row">
+            <img align="center" src="modules/core/img/table-catering-ad.png">
+        </div>
+
+    </div>
+ -->
+
+</div>
+<div class="col-md-12" id="Toprowuiview">
+    <h4 align="center">Place an Order:</h4>
+    <h1><a href="tel:+14123525439" style="color: red; text-shadow: 2px 2px 2px black;">412-352-5439</a></h1>
+</div>
+
+<section class="col-md-12" class="bottomAcknowledgement">
+    <p>&copy; 2014 East End Eatz</p>
+    <p>Website by
+        <a href="http://www.creativemonsterconsulting.com" target="_blank">Creative Monster Consulting, LLC.</a>
+    </p>
+</section>

@@ -17,7 +17,8 @@ module.exports = {
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
 				'https://fonts.googleapis.com/css?family=Playfair+Display',
 				'//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css',
-				'https://fonts.googleapis.com/css?family=Muli'
+				'https://fonts.googleapis.com/css?family=Muli',
+				'public/lib/angular-xeditable/dist/css/xeditable.css'
 			],
 			js: [
 				'public/lib/angular/angular.js',
@@ -25,7 +26,10 @@ module.exports = {
 				'public/lib/angular-animate/angular-animate.js',
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/angular-xeditable/dist/js/xeditable.js',
+				'http://cdn.jsdelivr.net/g/angular.textangular@1.2.2(textAngular-sanitize.min.js+textAngular.min.js)',
+				'//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'
 			]
 		},
 		css: [

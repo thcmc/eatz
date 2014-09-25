@@ -1,0 +1,62 @@
+.ta-scroll-window {background: none;}
+.ta-scroll-window > .ta-bind {
+	background: rgba(0,0,0,.6); 
+	color: white;
+	text-shadow: 1px 1px 1px #88AB2D, 2px 2px 3px black;
+}
+.ta-scroll-window h4 {
+	color: grey;
+	text-shadow: 1px 1px 1px black;
+}
+
+.page-header {
+	border: none;
+}
+.page-header h1 h5 {
+	font-family: 'Playfair Display', serif;  
+	text-align: center; 
+	color: white; 
+	font-variant: small-caps; 
+	text-shadow: 2px 2px 2px #88AB2D, 3px 3px 0px black;
+}
+.menuWrapper {
+	margin: 3px;
+}
+.menuWrapper h4 {
+	margin-bottom: 10px;
+	margin-top: 1px;
+	display: flex;
+	color: grey;
+	text-shadow: 1px 1px 1px black;
+	font-variant: small-caps;
+}
+.menuWrapper .contentWrap {
+	background: rgba(0,0,0,.6); 
+	padding: 8px; 
+	border: 3px inset red;
+}
+.menuWrapper p {
+	color: white;
+	text-shadow: 1px 1px 1px #88AB2D, 2px 2px 3px black;
+	height: 100%; 
+	letter-spacing: 1px;
+	line-height: 150%;
+	font-family: 'Playfair Display', serif; 
+	/*overflow-y:auto;*/
+}
+.menuWrapper a {
+	text-decoration: none;
+}
+.listFoodsMenu h3 {
+	color: white; 
+	text-shadow: 1px 1px 1px #88AB2D, 2px 2px 0px black;
+}
+.menuTitle {
+	text-align: center;
+	font-weight: 800;
+	font-family: 'Playfair Display', serif;
+	color: black;
+	font-size: 28px;
+/*	border-left: 28px inset red;*/
+	padding-left: 12px;
+}

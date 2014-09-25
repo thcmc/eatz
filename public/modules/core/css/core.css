@@ -20,8 +20,11 @@ body {margin-bottom: 60px; background-color: transparent;}
 
 h1 {font-size:48px;}
 h2 {font-family: 'Playfair Display', serif;}
-h3 {font-family: 'Muli', sans-serif;}
+h3 {font-family: 'Playfair Display', serif; color: white; text-shadow: black 0.2em 0.2em 0.3em; font-variant: small-caps; text-align: center;}
 h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-top: 10px;}
+
+h5 {font-family: 'Playfair Display', serif; color: white; text-shadow: black 0.2em 0.2em 0.3em; font-variant: small-caps; text-align: center;}  /* used in menu list items */
+h6 {font-family: 'Playfair Display', serif; color: white; text-shadow: black 0.2em 0.2em 0.3em; font-variant: small-caps; text-align: center;}  
 
 /* ---------------------------------------------------------------BG IMG */
 
@@ -70,10 +73,12 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
 
 #pittsburgh {position: relative; padding: 0;  color:rgba(255, 255, 255, .6);}
 /* ---------------------------------------------------------------layout */
+
+
 .mainWrapper {background: rgb(255, 255, 255); background: rgba(255, 255, 255, .6);}
 
 
-#Toprowuiview {margin-top: 10px; background: rgb(255, 255, 255); background: rgba(255, 255, 255, .6); }
+#Toprowuiview {margin-top: 12px; background: rgba(255, 255, 255, .6); border: 2px outset white;}
 #listleft {position: absolute; float: left; list-style: none; padding-left: 0px; margin-left: 0px; padding-top: 4px;}
 #listleft li {padding-top: 10px;}
 
@@ -130,15 +135,20 @@ h4 {font-family: 'Muli', sans-serif; border-bottom: 1px ridge #A60000; padding-t
 #Lmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8); text-align: left; } /*  */
 
 /* MENU */
+
+
 .menuAdsRight img {padding-top: 10px; margin-left: 14px;}
 
 /* Center middle column*/
 #Cmidcol {height: 100%; margin-top: 6px; padding-bottom: 10px;background: rgb(255, 255, 255); background: rgba(255, 255, 255, .8);} /*  */
-.insideCmidCol {padding: 10px; margin-top: 10px; margin-bottom: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, .6); color: white; border: 1px solid black; }
-.insideCmidCol:hover {border: 1px solid white; cursor: pointer;}
+.insideCmidCol {padding: 10px; margin-top: 10px; margin-bottom: 20px; background: rgba(0, 0, 0, .6); color: white; border: 1px solid black; }
+/*.insideCmidCol:hover {border: 1px` solid white; cursor: pointer;}*/
 .insideCmidCol p {font-family: 'Muli', sans-serif; text-shadow: black 0.1em 0.1em 0.2em;}
 .insideCmidCol h3 {color: white; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif; margin-top: 2px;}
 .insideCmidCol h5 {color: black; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif;}
+.insideCmidCol h6 {color: white; text-shadow: black 0.1em 0.1em 0.2em; font-family: 'Playfair Display', serif;}
+.insideCmidCol a:hover {cursor: pointer; color: red; z-index: -1; background: rgba(0, 0, 0, .3);}
+
 
 #imageTWO h2 {margin-top: 10px;}
 
