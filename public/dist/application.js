@@ -458,9 +458,9 @@ angular.module('foods').run([
   'Menus',
   function (Menus) {
     // Set top bar menu items
-    Menus.addMenuItem('topbar', 'Food Menus', 'foods', 'dropdown', '/foods(/create)?');
-    Menus.addSubMenuItem('topbar', 'foods', 'View Food Menus', 'foods');
-    Menus.addSubMenuItem('topbar', 'foods', 'Add/Edit Food Menus', 'foods/create');
+    Menus.addMenuItem('topbar', 'Menus', 'foods', 'dropdown', '/foods(/create)?');
+    Menus.addSubMenuItem('topbar', 'foods', 'List Menus', 'foods');
+    Menus.addSubMenuItem('topbar', 'foods', 'Add New Menu', 'foods/create');
   }
 ]);'use strict';
 //Setting up route
@@ -541,7 +541,7 @@ angular.module('foods').controller('FoodsController', [
     $scope.findOne = function () {
       $scope.food = Foods.get({ foodId: $stateParams.foodId });
     };
-    $scope.orightml = '<h4>Sample \'H4\' Style for Category Title</h4><h3 style="text-align:center;">Sample \'H3\' Style for Menu Item Title (also centered)</h3><p style="text-align: center;">Sample \'P\' (paragraph) style (also centered) for menu item number 1.</p>';
+    $scope.orightml = '<h4 align="left">this is H4</h4><h3 align="left">this is H3</h3><p align="left">this is P</p>';
     $scope.desc = $scope.orightml;
   }
 ]);'use strict';
