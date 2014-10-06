@@ -154,8 +154,10 @@
 		</section>	
 </section>
 </ui-view>
-<section class="col-md-12" class="bottomAcknowledgement">
-	<p>&copy; 2014 East End Eatz  <span><a href="/#!/signin"><i class="fa fa-square fa-2x pull-right" style="margin-top: 2px; color: red;"></i></a></span></p>
+<section class="col-md-12 bottomText" class="bottomAcknowledgement">
+	<p>&copy; 2014 East End Eatz  
+		<span><a data-ng-hide="authentication.user" href="/#!/signin"><i class="fa fa-key fa-2x pull-right"></i></a></span>
+	</p>
 	<p>Website by
 		<a href="http://www.creativemonsterconsulting.com" target="_blank">Creative Monster Consulting, LLC.</a>
 	</p>
