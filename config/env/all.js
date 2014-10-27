@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'East End Eatz | 412 Catering + Chef Services',
-		description: 'Event catering and private chef services in Pittsburgh headquartered in the East End. Featuring options for meal delivery, small batch cooking, and using locally produced, organic ingredients.',
-		keywords: 'Event Catering Pittsburgh, Private Chef Services Pittsburgh, Chef Sean Kelly Pittsburgh, Local catering Pittsburgh, East end catering, 412 Catering, 412 Chef Services'
+		title: 'East End Eatz | Pittsburgh Catering + Chef Services',
+		description: 'Event catering and private chef services in Pittsburgh headquartered in Pittsburgh\'s East End. Featuring options for meal delivery, small batch cooking, and using locally produced, organic ingredients.',
+		keywords: 'Pittsburgh Catering, Pittsburgh Caterers, Prive Chefs Pittsburgh,  Catering Pittsburgh, Event Catering Pittsburgh, Private Chef Services Pittsburgh, Chef Sean Kelly Pittsburgh, Local caterers Pittsburgh, East end catering, Catering 412, Chef Services 412, Pittsburgh Chef, Top Caterers in Pittsburgh, Top Private Chef Pittsburgh'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
